@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDM 2015 Regulation 9 Design Risk Assessment Audit Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Archer Health and Safety" class="header-logo-left">
+            <div class="header-content">
+                <h1>CDM 2015 DESIGNERS GPP AUDIT</h1>
+                <div class="reference">This audit is to ensure that the appointed design has complied with the general principles of prevention</div>
+            </div>
+            <img src="logo.png" alt="Archer Health and Safety" class="header-logo-right">
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <strong>Completion Progress: <span id="progressText">0%</span></strong>
+        </div>
+
+        <!-- Project Details -->
+        <div class="section">
+            <h2>PROJECT DETAILS</h2>
+            <div class="project-details">
+                <div class="form-group">
+                    <label for="projectTitle">Project Title *:</label>
+                    <input type="text" id="projectTitle" name="projectTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="projectRef">Project Reference:</label>
+                    <input type="text" id="projectRef" name="projectRef">
+                </div>
+                <div class="form-group">
+                    <label for="designer">Designer/Organisation *:</label>
+                    <input type="text" id="designer" name="designer" required>
+                </div>
+                <div class="form-group">
+                    <label for="auditDate">Audit Date *:</label>
+                    <input type="date" id="auditDate" name="auditDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="auditorName">Auditor Name *:</label>
+                    <input type="text" id="auditorName" name="auditorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="docRef">Document Reference:</label>
+                    <input type="text" id="docRef" name="docRef">
+                </div>
+            </div>
+        </div>
+
+        <!-- General Principles of Prevention -->
+        <div class="section">
+            <h2>GENERAL PRINCIPLES OF PREVENTION</h2>
+            <div class="designer-duties">
+                <h4>Schedule 1 - Management of Health and Safety at Work Regulations 1999:</h4>
+                <ul>
+                    <li><strong>1. Avoiding risks:</strong> Avoid risks altogether where possible</li>
+                    <li><strong>2. Evaluating unavoidable risks:</strong> Evaluate risks that cannot be avoided</li>
+                    <li><strong>3. Combating risks at source:</strong> Combat risks at their source rather than taking palliative measures</li>
+                    <li><strong>4. Adapting work to the individual:</strong> In particular, as regards the design of workplaces, the choice of work equipment and working and production methods, with a view to alleviating monotonous work and work at a predetermined work-rate and to reducing their effect on health</li>
+                    <li><strong>5. Adapting to technical progress:</strong> Take advantage of technical progress</li>
+                    <li><strong>6. Replacing dangerous with harmless:</strong> Replace the dangerous by the non-dangerous or the less dangerous</li>
+                    <li><strong>7. Developing coherent prevention policy:</strong> Develop a coherent overall prevention policy which covers technology, organisation of work, working conditions, social relationships and the influence of factors relating to the working environment</li>
+                    <li><strong>8. Giving collective protective measures priority:</strong> Give collective protective measures priority over individual protective measures</li>
+                    <li><strong>9. Giving appropriate instructions:</strong> Give appropriate instructions to employees</li>
+                </ul>
+                <p style="margin-top: 15px; font-style: italic; color: #856404;"><strong>Note:</strong> These principles must be applied by designers when designing structures under CDM 2015 Regulation 9 (2).</p>
+            </div>
+        </div>
+
+        <!-- Regulation 9 Compliance -->
+        <div class="section">
+            <h2>COMPLIANCE CHECKLIST</h2>
+            
+            <h3>A. Core Requirements</h3>
+            <table class="audit-table">
+                <thead>
+                    <tr>
+                        <th class="criteria-cell">Assessment Criteria</th>
+                        <th class="compliance-cell">Compliant</th>
+                        <th class="comments-cell">Evidence/Comments</th>
+                        <th class="actions-cell">Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criteria-cell"><strong>Hazard Elimination:</strong><br>Designer has eliminated hazards through design so far as reasonably practicable</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_1_yes" name="reg9_1_1" value="yes">
+                                    <label for="reg9_1_1_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_1_no" name="reg9_1_1" value="no">
+                                    <label for="reg9_1_1_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_1_na" name="reg9_1_1" value="na">
+                                    <label for="reg9_1_1_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="reg9_1_1_comments" placeholder="Describe evidence of hazard elimination measures. Include specific examples of design changes made to eliminate hazards, alternative materials or methods considered, and justification for decisions made."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="reg9_1_1_action" placeholder="Specify any actions required to address non-compliance or improve hazard elimination practices."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Risk Reduction:</strong><br>Designer has demonstrated an understanding of how risks can be reduced in design if they were not eliminated</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_2_yes" name="reg9_1_2" value="yes">
+                                    <label for="reg9_1_2_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_2_no" name="reg9_1_2" value="no">
+                                    <label for="reg9_1_2_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_2_na" name="reg9_1_2" value="na">
+                                    <label for="reg9_1_2_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="reg9_1_2_comments" placeholder="Document evidence of risk reduction measures. Detail design modifications, safer material specifications, improved access provisions, and other measures taken to reduce residual risks."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="reg9_1_2_action" placeholder="List actions needed to improve risk reduction measures or address identified deficiencies."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Designers Information:</strong><br>Designer has measures in place to provide information about risks not eliminated</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_3_yes" name="reg9_1_3" value="yes">
+                                    <label for="reg9_1_3_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_3_no" name="reg9_1_3" value="no">
+                                    <label for="reg9_1_3_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_1_3_na" name="reg9_1_3" value="na">
+                                    <label for="reg9_1_3_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="reg9_1_3_comments" placeholder="Provide evidence that collective protection measures have been prioritized over individual PPE solutions. Include examples of guardrails vs harnesses, safe access vs rope access, etc."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="reg9_1_3_action" placeholder="Identify actions to better prioritize collective protection measures in the design."></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>B. Information Provision</h3>
+            <table class="audit-table">
+                <thead>
+                    <tr>
+                        <th class="criteria-cell">Assessment Criteria</th>
+                        <th class="compliance-cell">Compliant</th>
+                        <th class="comments-cell">Evidence/Comments</th>
+                        <th class="actions-cell">Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criteria-cell"><strong>Residual Risks, Construction stage:</strong><br>Designer has demonstrated an understanding of how risks can be reduced in design if they were not eliminated</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_1_yes" name="reg9_2_1" value="yes">
+                                    <label for="reg9_2_1_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_1_no" name="reg9_2_1" value="no">
+                                    <label for="reg9_2_1_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_1_na" name="reg9_2_1" value="na">
+                                    <label for="reg9_2_1_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="reg9_2_1_comments" placeholder="Describe the information provided about residual risks. Review the completeness, clarity, and usefulness of information about risks that could not be designed out."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="reg9_2_1_action" placeholder="Specify improvements needed in residual risk information provision."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Residual Risks, Maintenance stage:</strong><br>Designer has provided residual risk information for maintenance and cleaning activities</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_2_yes" name="reg9_2_2" value="yes">
+                                    <label for="reg9_2_2_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_2_no" name="reg9_2_2" value="no">
+                                    <label for="reg9_2_2_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_2_na" name="reg9_2_2" value="na">
+                                    <label for="reg9_2_2_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="reg9_2_2_comments" placeholder="Assess information provided about construction phase risks. Include sequencing requirements, temporary works needs, access requirements, and special construction considerations."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="reg9_2_2_action" placeholder="Identify improvements needed for construction-related information."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Residual Risk, Deconstruction (demolition) work:</strong><br>Designer has provided residual risk information for deconstruciotn activities</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_3_yes" name="reg9_2_3" value="yes">
+                                    <label for="reg9_2_3_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_3_no" name="reg9_2_3" value="no">
+                                    <label for="reg9_2_3_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="reg9_2_3_na" name="reg9_2_3" value="na">
+                                    <label for="reg9_2_3_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="reg9_2_3_comments" placeholder="Review information about future maintenance requirements. Include access provisions, equipment requirements, frequency of maintenance, and associated risks."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="reg9_2_3_action" placeholder="Specify actions to improve maintenance-related information."></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>C. Administration</h3>
+            <table class="audit-table">
+                <thead>
+                    <tr>
+                        <th class="criteria-cell">Assessment Criteria</th>
+                        <th class="compliance-cell">Compliant</th>
+                        <th class="comments-cell">Evidence/Comments</th>
+                        <th class="actions-cell">Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criteria-cell"><strong>Client Duties Awareness:</strong><br>Designer has measures in place to ensure the client is aware of their duties owed under the CDM 2015 regulations</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_1_yes" name="admin_1" value="yes">
+                                    <label for="admin_1_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_1_no" name="admin_1" value="no">
+                                    <label for="admin_1_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_1_na" name="admin_1" value="na">
+                                    <label for="admin_1_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="admin_1_comments" placeholder="Evidence of designer's understanding of client duties including appointment requirements, notification duties, provision of pre-construction information, and ensuring adequate arrangements are in place."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="admin_1_action" placeholder="Actions to improve understanding or implementation of client duty requirements."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Pre-Construction Information Receipt:</strong><br>Designer has received and utilised relevant pre-construction information from the client or principal designer</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_2_yes" name="admin_2" value="yes">
+                                    <label for="admin_2_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_2_no" name="admin_2" value="no">
+                                    <label for="admin_2_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_2_na" name="admin_2" value="na">
+                                    <label for="admin_2_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="admin_2_comments" placeholder="Review the pre-construction information received including site surveys, existing structure information, hazardous materials reports, and how this information has influenced the design process."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="admin_2_action" placeholder="Actions to obtain missing pre-construction information or improve its utilization in design."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Workplace Regulations:</strong><br>Designer has measures in place to comply with the Workplace (Health, Safety & Welfare) Regulations 1992 </td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_3_yes" name="admin_3" value="yes">
+                                    <label for="admin_3_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_3_no" name="admin_3" value="no">
+                                    <label for="admin_3_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_3_na" name="admin_3" value="na">
+                                    <label for="admin_3_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="admin_3_comments" placeholder="Assess systems for sharing information with other designers, Principal Designer, Principal Contractor, and other duty holders. Include timing, format, and effectiveness of information transfer."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="admin_3_action" placeholder="Improvements needed in information circulation systems and processes."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Competency:</strong><br>Designer demonstrates the skills knowledge, knowledge and behaviours suitable for the role they are appointed for</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_4_yes" name="admin_4" value="yes">
+                                    <label for="admin_4_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_4_no" name="admin_4" value="no">
+                                    <label for="admin_4_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_4_na" name="admin_4" value="na">
+                                    <label for="admin_4_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="admin_4_comments" placeholder="Assess designer competence including qualifications, experience, training records, and allocation of adequate resources for health and safety in design activities."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="admin_4_action" placeholder="Actions to address competence gaps or resource allocation issues."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="criteria-cell"><strong>Coordination:</strong><br>Designer demonstrates arrangements for coordination with other designers during design stages</td>
+                        <td class="compliance-cell">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_5_yes" name="admin_5" value="yes">
+                                    <label for="admin_5_yes">Yes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_5_no" name="admin_5" value="no">
+                                    <label for="admin_5_no">No</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" id="admin_5_na" name="admin_5" value="na">
+                                    <label for="admin_5_na">N/A</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="comments-cell">
+                            <textarea name="admin_5_comments" placeholder="Review coordination mechanisms including design team meetings, information sharing protocols, interface management, and resolution of conflicting design requirements affecting health and safety."></textarea>
+                        </td>
+                        <td class="actions-cell">
+                            <textarea name="admin_5_action" placeholder="Improvements needed in designer coordination and collaboration processes."></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="summary-section">
+            <h2>AUDIT SUMMARY</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalItems">0</div>
+                    <div class="stat-label">Total Items</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="compliantItems">0</div>
+                    <div class="stat-label">Compliant</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="nonCompliantItems">0</div>
+                    <div class="stat-label">Non-Compliant</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="complianceRate">0%</div>
+                    <div class="stat-label">Compliance Rate</div>
+                </div>
+            </div>
+
+            <h3>Overall Compliance Rating</h3>
+            <div class="compliance-rating">
+                <div class="rating-option" onclick="selectRating('compliant')">
+                    <input type="radio" name="overallRating" value="compliant" id="rating_compliant">
+                    <label for="rating_compliant"><strong>FULLY COMPLIANT</strong><br>Meets all CDM 2015 requirements</label>
+                </div>
+                <div class="rating-option" onclick="selectRating('minor')">
+                    <input type="radio" name="overallRating" value="minor" id="rating_minor">
+                    <label for="rating_minor"><strong>MINOR NON-COMPLIANCE</strong><br>Minor issues requiring attention</label>
+                </div>
+                <div class="rating-option" onclick="selectRating('major')">
+                    <input type="radio" name="overallRating" value="major" id="rating_major">
+                    <label for="rating_major"><strong>MAJOR NON-COMPLIANCE</strong><br>Significant regulatory breaches</label>
+                </div>
+                <div class="rating-option" onclick="selectRating('non-compliant')">
+                    <input type="radio" name="overallRating" value="non-compliant" id="rating_non_compliant">
+                    <label for="rating_non_compliant"><strong>NON-COMPLIANT</strong><br>Fails CDM 2015 requirements</label>
+                </div>
+            </div>
+
+            <h3>Summary Comments</h3>
+            <div class="form-group">
+                <label for="strengths">Key Strengths Identified:</label>
+                <textarea id="strengths" name="strengths" placeholder="Document the key strengths and good practices identified during the audit. Include specific examples of excellent compliance or innovative approaches to risk management."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="improvements">Areas for Improvement:</label>
+                <textarea id="improvements" name="improvements" placeholder="Detail areas requiring improvement to achieve full compliance. Be specific about what needs to change and why."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="criticalActions">Critical Actions Required:</label>
+                <textarea id="criticalActions" name="criticalActions" placeholder="List immediate actions required to address serious non-compliance issues. Include timescales and responsible parties where possible."></textarea>
+            </div>
+        </div>
+
+        <!-- Sign-off Section -->
+        <div class="section">
+            <h2>SIGN-OFF AND APPROVAL</h2>
+            <table class="audit-table">
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Name</th>
+                        <th>Digital Signature/Initials</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Auditor</strong></td>
+                        <td><input type="text" name="auditor_name" placeholder="Enter full name..."></td>
+                        <td><input type="text" name="auditor_signature" placeholder="Enter initials..."></td>
+                        <td><input type="date" name="auditor_date"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Designer</strong></td>
+                        <td><input type="text" name="designer_name" placeholder="Enter full name..."></td>
+                        <td><input type="text" name="designer_signature" placeholder="Enter initials..."></td>
+                        <td><input type="date" name="designer_date"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Design Manager</strong></td>
+                        <td><input type="text" name="manager_name" placeholder="Enter full name..."></td>
+                        <td><input type="text" name="manager_signature" placeholder="Enter initials..."></td>
+                        <td><input type="date" name="manager_date"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="generatePDFReport()">Generate PDF Report</button>
+            <button class="btn btn-secondary" onclick="saveForm()">Save Form</button>
+            <button class="btn btn-success" onclick="importForm()">Import Form</button>
+            <input type="file" id="importFile" accept=".json" style="display: none;" onchange="handleFileImport(event)">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
